@@ -60,6 +60,7 @@ public class Principal {
 	public static void MostrarMenu() {
 		System.out.println("Elige una opcion de las propuestas a continuacion/n/n");
 		System.out.println("0.- Presentacion (Camilo Juan)");
+		System.out.println("1.-  Exercici 01 (Pablo Arévalo)");
 		System.out.println("2.-  Exercici 02 (Hector Lopez)");
 		System.out.println("11.- Ejercicio11 (Carlos Moles Valdivieso)");
 		System.out.println("12.- Ejercicio12 (Carlos Mota)");
@@ -114,6 +115,7 @@ public class Principal {
 			System.out.println("Proyecto que une todos los ejercicios del Tema 4 en un solo fichero./n/n");
 			break;
 		case 1:
+			T4_A1();
 			break;
 		case 2:
 			exercici02();
@@ -860,4 +862,25 @@ public class ejercicio16 {
 
 		} while (pedir = false);
 	}
+	package T4;
+
+public class T4_A1 {
+
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+		int x=1, y=1;
+		tablas(x,y);
+	}
+	static int tablas (int x, int y) {
+		 for (int i=1; i<11 ; i++) {
+			for (int m=1; m<11; m++) {
+				x=y*m;
+				System.out.println("Tabla de multiplicar del "+y+": "+y+"*"+m+"="+x);
+			}
+			x=0;
+			y++;
+		}
+		 return y & x;
+	}
+}
 }
